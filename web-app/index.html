@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Planner Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trading Planner Application</h1>
+    <form id="trading-form">
+        <label for="trade-name">Trade Name:</label>
+        <input type="text" id="trade-name" required>
+        
+        <label for="trade-date">Trade Date:</label>
+        <input type="date" id="trade-date" required>
+
+        <label for="entry-point">Entry Point:</label>
+        <input type="number" id="entry-point" required>
+
+        <label for="exit-point">Exit Point:</label>
+        <input type="number" id="exit-point" required>
+
+        <label for="stop-loss">Stop Loss:</label>
+        <input type="number" id="stop-loss" required>
+
+        <button type="submit">Submit Trade Plan</button>
+    </form>
+
+    <script>
+        document.getElementById('trading-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Trade plan submitted!');
+            // Further functionality can be added here.
+        });
+    </script>
+</body>
+</html>
